@@ -1,4 +1,4 @@
- from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackContext
 import requests
 from io import BytesIO
@@ -43,7 +43,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     )
 
 async def help_command(update: Update, context: CallbackContext) -> None:
-    help_message = "Need help? Visit our support page: [t.me/LEDO_55](t.me/LEDO_55)"
+    help_message = "Need help? Visit our support page: [t.me/LEDO_55](https://t.me/LEDO_55)"
     await update.message.reply_text(help_message, parse_mode='Markdown')
 
 def main() -> None:
