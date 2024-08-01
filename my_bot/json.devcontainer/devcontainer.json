@@ -1,0 +1,15 @@
+{
+    "name": "Python",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+      "ms-python.python"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "env": {
+      "TELEGRAM_BOT_TOKEN": "${localEnv:TELEGRAM_BOT_TOKEN}"
+    }
+  }
+  
